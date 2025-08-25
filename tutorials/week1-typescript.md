@@ -44,7 +44,7 @@ Contents:
     *   [Arrow Functions](#arrow-functions)
     *   [Function Overloads](#function-overloads)
 *   [Classes](#classes)
-    *   [Creating a class](#creating-an-abstract-class)
+    *   [Creating a class](#creating-a-class)
     *   [Creating an abstract class](#creating-an-abstract-class)
 *   [Type Aliases](#type-aliases)
 *   [Interfaces](#interfaces)
