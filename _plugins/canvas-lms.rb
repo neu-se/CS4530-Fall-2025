@@ -162,6 +162,7 @@ class CanvasSyncer
 
   def syncAssignment(title, dueDate, contents, baseURL, lastModifiedAt, permalink)
     assignmentIdx = getAllAssignments().index { |assignment| assignment['name'] == title }
+    time_zone = 'America/New_York'
     dueDate = DateTime.parse(dueDate)
     # baseURL = baseURL[0..baseURL.rindex('/')]
     contents = '<div class="fs-1 text-right fw-300">This content was last updated at:' + lastModifiedAt + '; you may view it with native formatting <a target="_blank" href="' + permalink+ '">on the course website</a></div>' + contents

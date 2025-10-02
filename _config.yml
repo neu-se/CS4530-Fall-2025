@@ -81,3 +81,4 @@ plugins:
 
 last-modified-at:
   date-format: '%b %d, %y %H:%M %Z'
+  timezone: America/New_York
