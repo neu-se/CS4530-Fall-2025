@@ -12,6 +12,7 @@ Welcome back to the Stack Overflow team! In this second deliverable, you will be
 
 ## Change Log
 
+- 2024-10-03: Updated descriptions for useAllCommunitiesPage and useCommunityCard hooks to clarify functionality and access restrictions.
 - 2024-09-30: Fixed changeCommunityMembership  implementation description to correctly reflect the use of POST request. Added note to create a button to open the modal to save a question to an existing collection.
 - 2024-09-27: Added new task under Collections implementation to verify sidebar navigation route setup.
 - 2024-09-21: 1. Removed Note on the Server tests will fail.2. All sections that say “Complete the component defined in that directory” in collections have been removed.3. Implement community service functions now has the same level of detail as Implement collection service functions.4. Corrected service function names in community service functions.5. Added comprehensive Cypress testing section.
@@ -157,7 +158,7 @@ In IP1, you implemented the backend functionality for Communities. In this task,
 
 **Create `useAllCommunitiesPage` custom hook**
 
-Create a new file `./client/src/hooks/useAllCommunitiesPage.ts`. This hook manages the state for displaying all communities. It should fetch communities using the `getAllCommunities` service function and handle filtering based on visibility.
+Create a new file `./client/src/hooks/useAllCommunitiesPage.ts`. This hook manages the state for displaying all communities. It should fetch communities using the `getCommunities` service function and handle updates to existing communities.
 
 **Complete the `AllCommunitiesPage` component**
 
@@ -165,7 +166,7 @@ In `./client/src/components/main/communities/allCommunitiesPage/index.tsx`, we'v
 
 **Create `useCommunityCard` custom hook**
 
-Create a new file `./client/src/hooks/useCommunityCard.ts`. This hook manages the state for individual community cards, including membership status.
+Create a new file `./client/src/hooks/useCommunityCard.ts`. This hook manages the render logic to display all communities. Private communities cannot be viewed by non members.
 
 **Complete the `CommunityCard` component**
 
