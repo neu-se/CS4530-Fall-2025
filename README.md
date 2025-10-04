@@ -21,7 +21,7 @@ This website is built using [Jekyll](https://jekyllrb.com), a lighweight static 
 
 ### Local development environment
 
-You will need to have Ruby 3.0 or 3.1 installed. Anhything higher than 3.1 and lower than 3.0 will cause issues with the Jekyll version in the Gemlock files.
+You will need to have Ruby 3.0 or 3.1 installed. Anything higher than 3.1 and lower than 3.0 will cause issues with the Jekyll version in the Gemlock files.
 
 The local development environment for [Jekyll](https://jekyllrb.com) will allow you to run a live-updating local server that lets you preview what the website will look like when it is deployed. As you make changes to the website (in the markdown files), the development server will automatically update the site that it is serving. View the [Jekyll quick start guide](https://jekyllrb.com/docs/) for more information.
 
