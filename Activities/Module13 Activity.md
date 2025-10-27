@@ -121,9 +121,8 @@ Note: The .env file is not required for the Render.com setup. The above instruct
    12. If you need to change any of these, you can do so from the tab called "Settings" (or "Environment")
 4. Click "Deploy Web Service".
 5. The URL of the backend service will be displayed in purple just below near the top of the window in the "Logs" section. Make a copy of this; you will need it later.
-6. Once the deployment is completed, visit the URL and check if you get a "hello world" response.
-7. Append `/api/question/getQuestion?order=newest&search=` to the URL and check if you get an successful response. A successful response should include the questions that are present in your MongoDB. If you get something like ` MongoDB connection error:  MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017`, that indicates that your server is trying to connect to your local database. Check that the value of `MONGODB_URI` is set correctly in the Render environment section.
-8. You can check the server's logs by going to the "Logs" section.
+6. Append `/api/question/getQuestion?order=newest&search=` to the URL and open it in a browser to check if you get an successful response. A successful response should include the questions that are present in your MongoDB. If you get something like ` MongoDB connection error:  MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017`, that indicates that your server is trying to connect to your local database. Check that the value of `MONGODB_URI` is set correctly in the Render environment section.
+7. You can check the server's logs by going to the "Logs" section.
 
 {: .note }
 You might see a warning like this after the server deployment:
@@ -147,7 +146,7 @@ In case your server is is not responding to requests after a long period of inac
 13. Open the [Render Dashboard](https://dashboard.render.com/) again. Choose the project you have created, and go back to service called "Web Service".
 14. Click on the "Environment" tab.
 15. In server deployment, add a new environment variable called `CLIENT_URL`. For the value, add the client URL (make sure you are adding this env. variable in the server's settings, not the client's). You should now have two environment variables for your server: `MONGDB_URI` and `CLIENT_URL`.
-16. Click on the "Redirects/Rewrites" tab.
+16. Go back to your client deployment and click on the "Redirects/Rewrites" tab in the sidebar.
 17. Add a "Rewrite" action with Source "/api/\*" and Destination "{your-server-url-from-render}/api/\*". This will redirect all API requests to the server properly.
 18. Add a "Rewrite" action with Source "/\*" and Destination "/index.html" this will point all traffic to our React page so that React Router can handle the routing instead of Render.com
 19. Click "Save Changes"
