@@ -65,8 +65,8 @@ The project must include evidence of testing (both for front-end and back-end). 
 * Any new or modified frontend features should be minimally tested. Limited or no evidence of testing is provided
 * Tests may contain ESlint warnings (but no errors); does not include any eslint-disable or ts-ignore flags
 
-### Process (20%)
-The Process grade includes: use of a structured development process, including pull requests, code reviews, timely completion of sprint progress reports/retrospectives, individual/team surveys, peer evaluations and weekly meetings with TA Mentor (for Week 6, 8, 10-14). It also includes appropriate division of labor within the project. For full credit, each member of the team must have at least 2 commits during each sprint in the final delivered code. 
+## Process (20%)
+The Process grade includes: use of a structured development process, including pull requests, code reviews, timely completion of sprint progress reports/retrospectives, individual/team surveys, peer evaluations and weekly meetings with TA Mentor (for Week 6, 8-13). It also includes appropriate division of labor within the project. **For full credit, each member of the team must have at least 2 commits during each sprint in the final delivered code.** 
 * Ongoing development progress including pull requests, code reviews, github commits, issue tracker activity, etc. count 10% of the grade
 * Peer evaluations, TA meeting, submission of surveys/reports counts 10% of the project grade. 
 These items will be evaluated using the rubrics below. 
@@ -88,7 +88,7 @@ These items will be evaluated using the rubrics below.
 #### Individual grading for Process component
 Team members with unexcused absences from TA Meetings, or with fewer than 2 commits per sprint during the lifespan of the project, may receive a lowered grade for the Process component. 
 
-### Final Report (10%)
+## Final Report (10%)
 The final report should consist of three sections:
 * Feature Overview and User Manual
 * Technical Overview
@@ -141,7 +141,7 @@ The allocation of the 10% credit will be as follows: Overview and manual will be
 * It provides a summary of what was planned to happen in each sprint vs what actually happened, with a discussion of what was revised as a result. 
 * The document is at most 2 pages (fewer pages are absolutely acceptable, consider this a rough limit) 
 
-### Posters and Demo (10%)
+## Posters and Demo (10%)
 Each team is **required** to submit a poster. Details can be found on [Project Deliverables]({{ site.baseurl }}{% link Assignments/project-deliverable.md %}) page. 
 
 In addition, some sections may have a demo (live in-person, via zoom or by recorded video). Each instructor has provided details regarding expectations for the demo and/or presentation below. The schedule and manner of these demos might also vary from section to section. The specifications for the different sections are listed below:
