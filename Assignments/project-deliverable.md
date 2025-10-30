@@ -16,6 +16,8 @@ Your final team deliverable will be a "release" of your new feature on GitHub (w
 Your final team deliverable will include:
 * The implementation of your new features, deployed to Render.com / Heroku 
 * Automated tests for your new features
+* A continuous integration (CI) pipeline
+* Project Plan as GitHub Projects
 * A report that describes how to use your new feature and what was completed vs proposed
 * A poster and/or demo
     
@@ -26,6 +28,20 @@ Accompanying the final team deliverable will be an *individual reflection*, whic
 
 #### Code, documentation and Link
  All apps will be deployed on Render/Heroku (instructions for CI/CD pipeline setup are provided separately). After you have pushed all of your code (and documentation) to your team's GitHub repository, create [a release](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository) on GitHub, and apply the tag version `final-submission`. After your release is created, you'll find that there is now a `.zip` that can be downloaded from GitHub that contains a snapshot of your entire repository. Download this zip file, unpack it, and follow the instructions that you provided in your README to double-check that the course staff will be able to run your project (this step is handy to make sure that you didn't forget to include some key files in git). If needed, you can delete the release, make some changes, and re-release up until the deadline. **Rename your zip file to include your group number in the file name. Submit this zip file to Canvas** under the assignment "Project: Code Submission" along with **the link of your hosted app** (in comments or a text file). Submit your report separately to Canvas, under the assignment "Project: Report".
+
+#### Continuous Integration Pipeline
+
+In your team's repo on GitHub you must have a CI workflow with the following characteristics: 
+- Runs when code is integrated to a mainline branch
+- Includes style checks
+- Runs all automated unit tests
+- Runs e2e tests for the most high value interactions in your application
+- Provides quick feedback
+- Is repeatable and deterministic
+
+#### Project Plan on GitHub
+
+In your team's repo on GitHub you must have a [GitHub Project](https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/creating-a-project) with a list of tasks created and completed. Each task must be linked to an issue on GitHub. Resolved issues must be connected to a commit id that was responsible for resolving it.
 
 #### Project Poster
 Each team **MUST** submit a poster. Your poster will be a single-page document, that will include the following aspects:
