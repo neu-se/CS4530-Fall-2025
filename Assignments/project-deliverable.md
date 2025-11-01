@@ -38,13 +38,14 @@ In your team's repo on GitHub you must have a CI workflow with the following cha
 - Runs e2e tests for the most high value interactions in your application
 - Provides quick feedback
 - Is repeatable and deterministic
+We will provide instructions for CI/CD pipeline setup separately.
 
 #### Project Plan on GitHub
 
-In your team's repo on GitHub you must have a [GitHub Project](https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/creating-a-project) with a list of tasks created and completed. Each task must be linked to an issue on GitHub. Resolved issues must be connected to a commit id that was responsible for resolving it.
+In your team's repo on GitHub you must have a [GitHub Project](https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/creating-a-project) with a list of tasks created and completed. Each task must be linked to an issue on GitHub. Resolved issues must be connected to a commit id that was responsible for resolving it. Use of other project management tools (e.g., JIRA, Trello, notion) are not required but teams are welcome to use them **in addition** to github Projects.
 
 #### Project Poster
-Each team **MUST** submit a poster. Your poster will be a single-page document, that will include the following aspects:
+Each team **MUST** submit a poster. Your poster will be a single-page PDF document, that will include the following aspects:
 
 * Short description of the project (OK to reuse text from the project plan/report)
 * Link to public demo site, link to source repo (OK to make the repo public now, or OK to leave as private)
@@ -55,7 +56,7 @@ Each team **MUST** submit a poster. Your poster will be a single-page document, 
 We've created a [sample poster for the "Conversation Areas" feature of Covey.Town]({{ site.baseurl }}{% link Examples/conversation-areas-poster.pdf %}), which you might find useful in deciding how to format your poster. It's fine to use a different aspect ratio (e.g. portrait instead of landscape), and there are no specific requirements for font size or amount of text. Please try to create a document that you feel represents your project, imagine your target audience as a recruiter for a software engineering role: your goal is to demonstrate that you have some experience working on some non-trivial software engineering project. **Each Poster must include your group number, names of team members and click-able links to your project repo and hosted app**. Create a PDF of your poster and rename it to include your project name and group number. A physical poster (or printed version) is not needed. **Posters will be submitted on Canvas**, under the assignment "Project: Poster / Demo".
 
 #### Project Demo/Presentation
-In addition to the poster, some sections will have live (in-person) presentations or demos. Details for project demos or presentations are provided separately by each instructor on the grading rubric page (and may vary from section to section). **Demo presentations will be submitted on Canvas**, under the assignment "Project: Poster / Demo".
+In addition to the poster, some sections will have live (in-person) presentations or demos. Details for project demos or presentations are provided separately by each instructor on the grading rubric page (and may vary from section to section). **Copies of presentations used in demos will be submitted on Canvas**, under the assignment "Project: Poster / Demo" (if required by your instructor).
 
 #### Project Showcase
 We will create a project showcase page for this semester (similar to the one from [Spring 2025](https://neu-se.github.io/CS4530-Spring-2025/assignments/project-showcase) semester). You will be asked to indicate your preference (if you don't want your project to be posted there) by completing a survey (a link will be provided in Canvas assignment "Project: Withdraw Permission for Showcase Page"). By default all projects will be posted unless your preference says otherwise. We often direct recruiters to that page. 
