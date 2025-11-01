@@ -15,14 +15,14 @@ Please note:
 - Each group will be required to submit copy of presentation (along with poster) on Canvas.
 - Each group will also be required to grade demos of other groups and send their grades to instructor.
 
-Your presentation should include the following:
+Your presentation should include the following slides:
 - {Required} Description of feature(s) or user stories implemented [no more than 1 slide]
 - {Required} Status of all conditions of satisfaction for your user stories (use percentages to show what was implemented vs what was proposed). Feel free to use a table from your project plan
 - {Required} Discuss any deviations from the proposed plan [no more than 1 slide]
 - {Required} If you did not complete any essential or desirable features, discuss why [no more than 1 slide]
 - {Optional} Discuss any challenges you faced and how did you resolve them [no more than 1 slide]
 - {Required} Short summary of overall contributions made by each member [no more than 1 slide with 1-2 sentences per member];
-- {Required} What percentage of overall contribution was made by each member and what are the estimated number of hours spent on the {overall} development work during the project by each member excluding research tasks or time spent on project planning [no more than 1 slide]
+- {Required} What percentage of overall contribution was made by each member and what are the estimated number of hours spent on the {overall} development work during the project excluding research tasks or time spent on project planning [no more than 1 slide]
 
 During your presentation, you might want to consider the following order: quick introduction of project features (i.e., user stories) followed by live demo of your app, then present the remaining slides in the order listed above or in any order you find appropriate.
 

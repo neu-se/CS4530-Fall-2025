@@ -42,7 +42,7 @@ We will provide instructions for CI/CD pipeline setup separately.
 
 #### Project Plan on GitHub
 
-In your team's repo on GitHub you must have a [GitHub Project](https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/creating-a-project) with a list of tasks created and completed. Each task must be linked to an issue on GitHub. Resolved issues must be connected to a commit id that was responsible for resolving it. Use of other project management tools (e.g., JIRA, Trello, notion) are not required but teams are welcome to use them **in addition** to github Projects.
+In your team's repo on GitHub you must have a [GitHub Project](https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/creating-a-project) with a list of tasks created and completed. Each task must be linked to an issue on GitHub. Resolved issues must be connected to a commit id that was responsible for resolving it. Use of other project management tools (e.g., JIRA, Trello, notion) is not required but teams are welcome to use them **in addition** to github Projects.
 
 #### Project Poster
 Each team **MUST** submit a poster. Your poster will be a single-page PDF document, that will include the following aspects:
