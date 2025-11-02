@@ -24,11 +24,11 @@ Your presentation should include the following:
 You might want to include your email address and other related info (i.e., github repo link, pictures, hosted site link, etc). You will also **submit** a copy of your presentation (pptx/pdf file, not link) on Canvas under "Project: Poster/Demo" assignment.
 
 # Grading Rubric:
-Your final Poster and Presentation are worth 5% of the overall course. 
+Your final Poster and Presentation are worth 4% of the overall course. 
 
 Poster will be worth 1% and will be graded based on whether you submitted it on time or not. 
 
-Presentation (which includes demo) will be worth 4% and will be graded in the following manner: 
+Presentation (which includes demo) will be worth 3% and will be graded in the following manner: 
 - All team members contributed during presentation
 - The demo worked for the feature being shown
 - The presentation includes all the required aspects.
