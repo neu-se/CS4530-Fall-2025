@@ -53,11 +53,11 @@ We will grade each of these using the following rubric:
 * Implemented features do not include any eslint-disable or ts-ignore flag
 
 ### Testing (10%)
-The project must include evidence of testing (both for front-end and back-end). Ideally, all new features will be accompanied by fully automated tests, but in some circumstances, this may not be feasible. If automated tests are not possible, include a discussion of your manual testing strategy. The evidence of testing can be submitted as part of your report. There is no explicit requirement to make use of any specific testing technology (e.g. mocks, spies, etc.) or library (e.g., cypress).
+The project must include evidence of testing (both for front-end and back-end). Ideally, all new features will be accompanied by fully automated tests, but in some circumstances, this may not be feasible. If automated tests are not possible, include a discussion of your manual testing strategy. The evidence of testing can be submitted as part of your report. Teams are welcome to make use of any testing technology (e.g. mocks, spies, etc.) or library (e.g., cypress) but we don't require the use of any specific library.
 
 #### Satisfactory:
 * Any new or modified backend features include tests that validate that the feature works as intended. These tests cover the changed code, and also contain well-written assertions that thoroughly check the expected behaviors.
-* Any new or modified frontend features should be thoroughly tested to validate that the feature works as intended. These tests may be manual. Evidence of your testing is provided.
+* Any new or modified frontend features should be thoroughly tested to validate that the feature works as intended. Evidence of your testing is provided. These tests may be manual if automated tests are not possible. 
 * Tests contains no ESLint warnings or errors; do not include any eslint-disable or ts-ignore flags
 
 #### Meets minimum requirements:
