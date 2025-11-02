@@ -7,7 +7,7 @@ nav_order: 9
 ---
 
 # Specifications for Live Demos or Presentations (Sections 7 & 8 - Prof. Mitra)
-Each group will present a live demo to show the feature that they have added for the final project. The schedule of these demos is provided on your section's calendars but the order of demos will be discussed/finalized during the lecture. You will have 20 minutes maximum (12 minutes to setup and present + 8 minute for questions and everything else). You will lose points if your demo goes over 15 minutes. Please rehearse it and time yourself (best to keep it to 12 minutes or less). 
+Each group will present a live demo to show the feature that they have added for the final project. The schedule of these demos is provided on your section's calendars but the order of demos will be discussed/finalized during the lecture. You will have 20 minutes maximum (12-15 minutes to setup and present + 5-8 minutes for questions). You will lose points if your presentation goes over 15 minutes.  
 
 Please note:
 - The live demo must be from the deployed site, not from localhost. 
@@ -19,8 +19,7 @@ Your presentation should include the following:
 - {Required} Application Architecture description, advantages, and limitations [1-2 slides]
 - {Required} Testing Strategy [1 slide]
 - {Required} Software Development Process. You must include why your team's development workflow aligns with the process. [1-2 slides]
-
-Show a quick demo of your application lasting not more than 1 minute in your presentation. Pick one feature and demonstrate that.
+- {Required} A quick demo of your application lasting not more than 1 minute. Pick one feature and demonstrate that.
 
 You might want to include your email address and other related info (i.e., github repo link, pictures, hosted site link, etc). You will also **submit** a copy of your presentation (pptx/pdf file, not link) on Canvas under "Project: Poster/Demo" assignment.
 
