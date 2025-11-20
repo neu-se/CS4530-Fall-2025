@@ -78,6 +78,9 @@ posters:
   name: Poster Presentations
 advanced:
   name: Advanced Topics in SE
+ai:
+  name: Coding with AI  
+  page: /modules/17-ai
 ip1:
   name: Individual Project 1
   type: deadline
