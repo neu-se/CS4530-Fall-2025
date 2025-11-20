@@ -1,0 +1,1115 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <link rel="stylesheet" href="/CS4530-Fall-2025/assets/css/just-the-docs-default.css">
+
+  
+
+  
+    <script src="/CS4530-Fall-2025/assets/js/vendor/lunr.min.js"></script>
+  
+
+  <script src="/CS4530-Fall-2025/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Individual Project 1 | CS4530, Fall 2025</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Individual Project 1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Northeastern University CS 4530 “Fundamentals of Software Engineering”, Fall 2025. Professors Adeel Bhutta, Joydeep Mitra and Mitch Wand." />
+<meta property="og:description" content="Northeastern University CS 4530 “Fundamentals of Software Engineering”, Fall 2025. Professors Adeel Bhutta, Joydeep Mitra and Mitch Wand." />
+<link rel="canonical" href="https://neu-se.github.io/CS4530-Fall-2025/assignments/ip1" />
+<meta property="og:url" content="https://neu-se.github.io/CS4530-Fall-2025/assignments/ip1" />
+<meta property="og:site_name" content="CS4530, Fall 2025" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Individual Project 1" />
+<script type="application/ld+json">
+{"description":"Northeastern University CS 4530 “Fundamentals of Software Engineering”, Fall 2025. Professors Adeel Bhutta, Joydeep Mitra and Mitch Wand.","headline":"Individual Project 1","dateModified":"2025-11-20T01:19:56+00:00","url":"https://neu-se.github.io/CS4530-Fall-2025/assignments/ip1","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+</head>
+
+<body>
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+  <title>Link</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+  </svg>
+</symbol>
+
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+  <title>Menu</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+</symbol>
+
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+  <title>Expand</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+</symbol>
+
+  <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
+<symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+  <title id="svg-external-link-title">(external link)</title>
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+</symbol>
+
+  
+    <symbol id="svg-doc" viewBox="0 0 24 24">
+  <title>Document</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+  </svg>
+</symbol>
+
+    <symbol id="svg-search" viewBox="0 0 24 24">
+  <title>Search</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</symbol>
+
+  
+  
+    <!-- Bootstrap Icons. MIT License: https://github.com/twbs/icons/blob/main/LICENSE.md -->
+<symbol id="svg-copy" viewBox="0 0 16 16">
+  <title>Copy</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+  </svg>
+</symbol>
+<symbol id="svg-copied" viewBox="0 0 16 16">
+  <title>Copied</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"/>
+  </svg>
+</symbol>
+
+  
+</svg>
+
+  <div class="side-bar">
+  <div class="site-header" role="banner">
+    <a href="/CS4530-Fall-2025/" class="site-title lh-tight">
+  CS4530, Fall 2025
+
+</a>
+    <button id="menu-button" class="site-button btn-reset" aria-label="Toggle menu" aria-pressed="false">
+      <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
+    </a>
+  </div>
+  <nav aria-label="Main" id="site-nav" class="site-nav">
+    
+    
+      <ul class="nav-list"><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Calendar category" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+        </button><a href="/CS4530-Fall-2025/calendar/" class="nav-list-link">Calendar</a><ul class="nav-list"><li class="nav-list-item "><a href="/CS4530-Fall-2025/calendar/s1" class="nav-list-link">Section 1 - Calendar</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/calendar/s2" class="nav-list-link">Section 2 - Calendar</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/calendar/s5" class="nav-list-link">Section 5 - Calendar</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/calendar/s7" class="nav-list-link">Section 7 - Calendar</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/calendar/s8" class="nav-list-link">Section 8 - Calendar</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/calendar/s9" class="nav-list-link">Section 9 - Calendar</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Modules category" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+        </button><a href="/CS4530-Fall-2025/modules/" class="nav-list-link">Modules</a><ul class="nav-list"><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/1-requirements-testing" class="nav-list-link">1 - Orientation & Requirements</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/2-requirements-to-code" class="nav-list-link">2 - From Requirements to Code</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/3-test-adequacy" class="nav-list-link">3 - Test Adequacy</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/4-code-level-design" class="nav-list-link">4 - Code-Level Design Principles</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/5-interaction-level-design-patterns" class="nav-list-link">5 - Interaction-Level Design Patterns</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/6-concurrency-patterns-in-typescript" class="nav-list-link">6 - Concurrency Patterns in Typescript</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/7-software-process" class="nav-list-link">7 - Software Process</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/8-react" class="nav-list-link">8 - React</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/9-patterns-of-react" class="nav-list-link">9 - React Hooks</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/10-app-patterns" class="nav-list-link">10 - Application Level Patterns</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/11-larger-tests" class="nav-list-link">11 - Tests With Larger Scope</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/12-security" class="nav-list-link">12 - Security</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/13-continuous-development" class="nav-list-link">13 - Continuous Development</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/14-cloud-infrastructure" class="nav-list-link">14 - Cloud Infrastructure</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/15-open-source" class="nav-list-link">15 - Open Source</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/16-ethics" class="nav-list-link">16 - Ethics and Equity in SE</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/17-ai" class="nav-list-link">17 - Coding with AI</a></li></ul></li><li class="nav-list-item active"><button class="nav-list-expander btn-reset" aria-label="toggle items in Assignments category" aria-pressed="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+        </button><a href="/CS4530-Fall-2025/assignments/" class="nav-list-link">Assignments</a><ul class="nav-list"><li class="nav-list-item  active"><a href="/CS4530-Fall-2025/assignments/ip1" class="nav-list-link active">Individual Project 1</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/assignments/ip2" class="nav-list-link">Individual Project 2</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/assignments/project-overview" class="nav-list-link">Project Overview</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/assignments/project-plan" class="nav-list-link">Preliminary Project Plan</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/assignments/revised-project-plan" class="nav-list-link">Revised Project Plan</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/assignments/project-deliverable" class="nav-list-link">Project Final Deliverable</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/assignments/project-grading" class="nav-list-link">Final Project Grading</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Tutorials category" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+        </button><a href="/CS4530-Fall-2025/tutorials/" class="nav-list-link">Tutorials</a><ul class="nav-list"><li class="nav-list-item "><a href="/CS4530-Fall-2025/tutorials/week1-getting-started" class="nav-list-link">Installing a Development Environment</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/tutorials/week1-typescript-basics" class="nav-list-link">Typescript Basics</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/tutorials/week1-user-stories" class="nav-list-link">Requirments Engineering with VSD</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/tutorials/week1-unit-testing" class="nav-list-link">Unit Testing with Jest</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/tutorials/week1-mongodb-mongoose" class="nav-list-link">MongoDB and Mongoose</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/tutorials/week1-apirequests-postman" class="nav-list-link">Guide to API Requests and Installing Postman</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/tutorials/week3-socketio-basics" class="nav-list-link">Socket.IO Tutorial</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/tutorials/week4-react-basics" class="nav-list-link">React Tutorial</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/tutorials/week5-cypress" class="nav-list-link">UI Testing with Cypress</a></li></ul></li><li class="nav-list-item"><a href="/CS4530-Fall-2025/textbooks/" class="nav-list-link">Textbooks</a></li><li class="nav-list-item"><a href="/CS4530-Fall-2025/staff/" class="nav-list-link">Staff</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Policies category" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+        </button><a href="/CS4530-Fall-2025/policies/" class="nav-list-link">Policies</a><ul class="nav-list"><li class="nav-list-item "><a href="/CS4530-Fall-2025/policies/ai" class="nav-list-link">Policy on Use of AI</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/policies/style/" class="nav-list-link">Code Style</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/policies/debugging/" class="nav-list-link">Debugging</a></li></ul></li><li class="nav-list-item"><a href="/CS4530-Fall-2025/resources/" class="nav-list-link">Other Resources</a></li></ul>
+
+    
+  </nav>
+
+  
+  
+    <footer class="site-footer">
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+    </footer>
+  
+</div>
+
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+  
+    
+
+<div class="search" role="search">
+  <div class="search-input-wrap">
+    <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search CS4530, Fall 2025" aria-label="Search CS4530, Fall 2025" autocomplete="off">
+    <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+  </div>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+  
+  
+  
+</div>
+
+    <div id="main-content-wrap" class="main-content-wrap">
+      <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb-nav-list">
+  
+    <li class="breadcrumb-nav-list-item"><a href="/CS4530-Fall-2025/assignments/">Assignments</a></li>
+  <li class="breadcrumb-nav-list-item"><span>Individual Project 1</span></li>
+  </ol>
+</nav>
+      <div id="main-content" class="main-content">
+        <main>
+          
+            <h2 class="fs-6" id="individual-project-1">
+  
+  
+    <a href="#individual-project-1" class="anchor-heading" aria-labelledby="individual-project-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 
+    
+    Individual Project 1
+    
+    <strong class="label label-red">Due Thursday September 18, 2025 12:00pm EST (Noon)</strong>
+
+  
+  
+</h2>
+    
+
+
+<blockquote class="warning">
+<h3 id="-important-update-repository-sync-required">
+  
+  
+    <a href="#-important-update-repository-sync-required" class="anchor-heading" aria-labelledby="-important-update-repository-sync-required"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 🔄 Important Update: Repository Sync Required
+  
+  
+</h3>
+    
+  <p>If you’ve already accepted the assignment and have a repo set up:</p>
+  <ol>
+    <li>Check your assignment repo—you should see a Pull Request called “Sync Assignment” waiting to be merged</li>
+    <li><strong>Merge this PR first</strong> before starting any new work (this is super important!)</li>
+    <li>After merging:
+      <ul>
+        <li>Pull the changes to your local main branch</li>
+        <li>Push to your repo to keep everything in sync</li>
+        <li>Then continue working on the main branch</li>
+      </ul>
+    </li>
+  </ol>
+
+  <p>Haven’t created your repo yet? No action needed—everything will be up-to-date when you start!</p>
+
+  <p>Think of this as your first real-world experience with “Hey, the upstream repo changed—time to sync up!”</p>
+
+  <p><strong>Note</strong>: If you’re having GitHub authentication issues, check your email for an invitation from us or contact course staff ASAP.</p>
+</blockquote>
+
+<p>Welcome aboard to the FakeStackOverflow team! We’re glad that you’re here and ready to join our development team as a new software engineer.
+We’re building an interactive application for an online community to share their knowledge and experience, and are very happy to see that we have so many new developers who can help make this application a reality.
+By the end of the semester, you’ll be able to propose, design, implement, and test new features for our project.
+We understand that some of you may have some web development experience, but don’t expect that most of you do, and hence, we have created an individual project to help you get up to speed with our existing codebase and development environment.</p>
+
+<p>FakeStackOverFlow is a web application that consists of some code that runs in each client’s web browser, and also code that runs on a server.</p>
+
+<p>This implementation effort will be split across two deliverables. In this first deliverable, you will implement and test the core backend components for this feature, and in the second deliverable, you will implement and test the frontend components.</p>
+<h2 id="change-log">
+  
+  
+    <a href="#change-log" class="anchor-heading" aria-labelledby="change-log"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Change Log
+  
+  
+</h2>
+    
+<ul>
+  <li>9/5/2025: Added a note about invitations to join neu-cs4530 organization</li>
+  <li>9/8/2025: Added important repository sync instructions. All students with existing repositories must merge the “Sync Assignment” PR before continuing work.</li>
+  <li>9/11/2025: Added clarification. If you find inconsistencies between the handout and the JSDoc comments for the schema, <strong>refer to <code class="language-plaintext highlighter-rouge">server/seedData/data</code></strong> to define the schema.</li>
+  <li>9/17/2025: Extended deadline by 24 hrs.</li>
+</ul>
+<h2 id="objectives-of-this-assignment">
+  
+  
+    <a href="#objectives-of-this-assignment" class="anchor-heading" aria-labelledby="objectives-of-this-assignment"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Objectives of this assignment
+  
+  
+</h2>
+    
+
+<p>The objectives of this assignment are to:</p>
+
+<ul>
+  <li>Get you familiar with the basics of TypeScript, VSCode, and the project codebase</li>
+  <li>Learn how to read and write code in TypeScript</li>
+  <li>Translate high-level requirements into code</li>
+  <li>Learn how to write unit tests with Jest</li>
+</ul>
+<h2 id="getting-started-with-this-assignment">
+  
+  
+    <a href="#getting-started-with-this-assignment" class="anchor-heading" aria-labelledby="getting-started-with-this-assignment"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Getting started with this assignment
+  
+  
+</h2>
+    
+
+<p>Start by accepting our <a href="https://classroom.github.com/a/VQb9V2XG">invitation</a>. It will create a Github repository for you which will include the starter code for this assignment. In case you have enrolled in the course recently, you may not find your name in the student list (which was populated with the list of enrolled students at the start of the semester). Please create a piazza post to contact us and we will add you to the Github Classroom roster.</p>
+
+<p>If you are having difficulty accessing the repo, one possible reason could be that github classroom did not sucessfully add you to the organization. (Update 9/5: we have invited all students to our organization. Check your northeastern email or your spam/junk folder and accept the invitation to join neu-cs4530. You can also view invitations from <a href="github.com/settings/organizations">github site</a>). If you facing this issue, please create a piazza post to contact us and we will send you invitation again.</p>
+
+<p>If you are new to Git, you may want to work on “Learning Basics of Git” <a href="https://classroom.github.com/a/QkL5qQ90">assignment</a> first!</p>
+<h3 id="1-prerequisites">
+  
+  
+    <a href="#1-prerequisites" class="anchor-heading" aria-labelledby="1-prerequisites"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1. Prerequisites
+  
+  
+</h3>
+    
+<h4 id="11-install-nodejs-and-npm">
+  
+  
+    <a href="#11-install-nodejs-and-npm" class="anchor-heading" aria-labelledby="11-install-nodejs-and-npm"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1.1 Install Node.js and npm
+  
+  
+</h4>
+    
+
+<p>If you haven’t installed npm and node.js, follow the tutorial on setting up a development environment for this class</p>
+<h4 id="12-install-mongodb">
+  
+  
+    <a href="#12-install-mongodb" class="anchor-heading" aria-labelledby="12-install-mongodb"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1.2 Install MongoDB
+  
+  
+</h4>
+    
+
+<p>We use MongoDB as the NoSQL database to store data related to this application.</p>
+
+<ol>
+  <li>Follow the <a href="https://www.mongodb.com/docs/manual/administration/install-community/">instructions in the official MongoDB documentation</a> to install the free community edition.</li>
+  <li>Choose ‘Install on Linux’, ‘Install on macOS’, or ‘Install on Windows’, depending on your system. (the following steps are for Windows)</li>
+  <li>Scroll down to the section labeled ‘Install MongoDB Community Edition.’ and click on <a href="https://www.mongodb.com/try/download/community?tck=docs_server">MongoDB Download Center</a>.</li>
+  <li>For Windows, in the Package dropdown, select <code class="language-plaintext highlighter-rouge">msi</code>. Then download and run the installer.</li>
+  <li>On Windows, select the <em>“Install MongoDB as a Service”</em> checkbox and install. This will start MongoDB as a background service.</li>
+  <li>Install “MongoDB Compass” if prompted.</li>
+  <li>Verify if the MongoDB server is running using the Windows Services app.</li>
+</ol>
+
+<p>Mongo offers several methods of interacting with your Mongo databases.</p>
+
+<ul>
+  <li>
+    <p>MongoDB Compass is an interactive application for creating, modifying, and querying MongoDB connections. It should be started as part of the installation process, showing a connection to <code class="language-plaintext highlighter-rouge">mongodb://localhost:27017/</code>.</p>
+
+    <p>For Windows, install MongoDB Compass using the instructions above.</p>
+
+    <p>For Mac:</p>
+
+    <ul>
+      <li>Download the dmg file from https://www.mongodb.com/try/download/compass. Once the application starts:
+        <ol>
+          <li>Click on “Add new connection” in the left sidebar.</li>
+          <li>Make sure the URI field contains <code class="language-plaintext highlighter-rouge">mongodb://localhost:27017</code></li>
+          <li>Click on “Connect” - MongoDB will need to be running as a macOS service</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Mongo shell (<em>mongosh</em>) provides a command-line interface that can be used to interact with databases in MongoDB.</p>
+
+    <p>For Windows:</p>
+
+    <ul>
+      <li>Download it <a href="https://www.mongodb.com/try/download/shell">here</a> using the msi package. You can also use <em>mongosh</em> to see if the MongoDB server is running. Try the MongoDB Community Edition and the command <code class="language-plaintext highlighter-rouge">show dbs</code>; you should see a list of existing databases in your local instance.</li>
+    </ul>
+
+    <p>For Mac:</p>
+
+    <ul>
+      <li>Mongo shell is automatically installed with MongoDB through the Mac installation instructions. To use it, make sure MongoDB is running as a macOS service, then type <code class="language-plaintext highlighter-rouge">mongosh</code> into the terminal.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Last and most important, you can use the <a href="https://mongoosejs.com/docs/index.html">Mongoose api</a> to interact with MongoDB through your JavaScript or TypeScript programs. Mongoose will be installed as part of the installation process for the project starter code.</p>
+  </li>
+</ul>
+<h3 id="2-install-the-starter-code-and-its-dependencies">
+  
+  
+    <a href="#2-install-the-starter-code-and-its-dependencies" class="anchor-heading" aria-labelledby="2-install-the-starter-code-and-its-dependencies"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2. Install the starter code and its dependencies
+  
+  
+</h3>
+    
+
+<p>The starter code package, of which this is a part, is divided into 3 main directories: <em>client</em>, <em>server</em>, and <em>testing</em>.</p>
+
+<ol>
+  <li>Navigate to the root directory of the repo.</li>
+  <li>Install the dependencies for each directory by running the following commands:</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+npm <span class="nb">install </span>from the project root
+</code></pre></div></div>
+
+<p>Once you install the dependencies, you might see the following ESlint errors in some files. The linter error indicates that the code contains carriage return characters (\r, represented as ␍) at the end of each line and usually happens when the file has Windows-style line endings (\r\n) instead of Unix-style line endings (\n). To fix this, you can click on the “CRLF” icon on the lower right corner of VSCode and change it to “LF”. Note that this does not count as a linting error when grading.
+<img src="/CS4530-Fall-2025/Assignments/ip1/linter-errors.png" alt="image" /></p>
+
+<p><strong>Note:</strong> Please ignore the testing directory as it contains cypress tests that we do not cover in grading.</p>
+<h3 id="3-setup-environment-variables">
+  
+  
+    <a href="#3-setup-environment-variables" class="anchor-heading" aria-labelledby="3-setup-environment-variables"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 3. Setup Environment Variables**
+  
+  
+</h3>
+    
+
+<ol>
+  <li>Create a file called <code class="language-plaintext highlighter-rouge">.env</code> in <code class="language-plaintext highlighter-rouge">./client</code>. In <code class="language-plaintext highlighter-rouge">./client/.env</code> ensure the following lines:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>REACT_APP_SERVER_URL=http://localhost:8000
+</code></pre></div></div>
+
+<ol>
+  <li>Create a file called <code class="language-plaintext highlighter-rouge">.env</code> in <code class="language-plaintext highlighter-rouge">./server</code>. In <code class="language-plaintext highlighter-rouge">./server/.env</code> ensure the following lines:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MONGODB_URI=mongodb://127.0.0.1:27017
+CLIENT_URL=http://localhost:4530
+PORT=8000
+</code></pre></div></div>
+<h3 id="4-populate-the-initial-database">
+  
+  
+    <a href="#4-populate-the-initial-database" class="anchor-heading" aria-labelledby="4-populate-the-initial-database"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 4. Populate the initial database
+  
+  
+</h3>
+    
+
+<p class="note">Right now, you may run into errors regarding unknown properties. Once you finish implementing both Task 1 and 2 and modify the schema, you should be able to populate the database correctly.</p>
+
+<ol>
+  <li>In the <code class="language-plaintext highlighter-rouge">server</code> directory, run <code class="language-plaintext highlighter-rouge">npm run populate-db</code> to populate the <code class="language-plaintext highlighter-rouge">fake_so</code> database with example data that follows the schema definition.</li>
+  <li>If you want to delete all the data at any point, you can use <code class="language-plaintext highlighter-rouge">npm run delete-db</code> to delete all entries in the <code class="language-plaintext highlighter-rouge">fake_so</code> database.</li>
+</ol>
+<h3 id="5-familiarize-yourself-with-project-dependencies">
+  
+  
+    <a href="#5-familiarize-yourself-with-project-dependencies" class="anchor-heading" aria-labelledby="5-familiarize-yourself-with-project-dependencies"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 5. Familiarize Yourself with Project Dependencies
+  
+  
+</h3>
+    
+
+<ol>
+  <li>Ensure the following packages are installed: mongoose, express, jest, eslint, axios, cors, and nodemon.</li>
+  <li>Refer to the documentation for the following packages:</li>
+</ol>
+
+<ul>
+  <li>
+    <p><a href="https://expressjs.com/">Express</a> is a framework to write server-side code.</p>
+  </li>
+  <li>The <a href="https://mongoosejs.com/docs/index.html">mongoose data modeling library</a>. Mongoose provides JS/TS bindings to MongoDB, so we can manage and manipulate the data from our JS/TS programs.</li>
+  <li><a href="https://www.npmjs.com/package/nodemon">nodemon</a> accelerates the development by automatically restarting a node application when file changes in the directory are detected.</li>
+  <li>
+    <p>We use the <a href="https://axios-http.com/docs/intro">axios</a> library to send HTTP requests to our server from our client application.</p>
+  </li>
+  <li>We use <a href="https://www.npmjs.com/package/cors">cors</a> to regulate the permissible connections between the
+clients and the server. The current cors configuration allows all
+connections to the server for convenience. This is fine for a development environment. In a
+production environment where the application is deployed on a cloud service, the CORS policy needs to be specified more strictly. Read more about CORS <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS</a>.</li>
+</ul>
+<h4 id="testing-dependencies">
+  
+  
+    <a href="#testing-dependencies" class="anchor-heading" aria-labelledby="testing-dependencies"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Testing Dependencies
+  
+  
+</h4>
+    
+
+<p>For comprehensive testing of your backend implementation, familiarize yourself with these testing libraries:</p>
+
+<ul>
+  <li>
+    <p><strong><a href="https://jestjs.io/">Jest</a></strong> -Testing framework for unit tests. Jest provides test runners, assertion libraries, and mocking capabilities.</p>
+  </li>
+  <li>
+    <p><strong><a href="https://github.com/visionmedia/supertest">Supertest</a></strong> - A library for testing HTTP endpoints. Supertest allows you to make HTTP requests to your Express server during tests and assert on the responses. It’s particularly useful for integration testing of your API routes.</p>
+  </li>
+  <li>
+    <p><strong><a href="https://www.npmjs.com/package/@types/jest">@types/jest</a></strong> and <strong><a href="https://www.npmjs.com/package/@types/supertest">@types/supertest</a></strong> - TypeScript type definitions for Jest and Supertest to enable proper type checking in your test files.</p>
+  </li>
+</ul>
+<h4 id="key-testing-concepts">
+  
+  
+    <a href="#key-testing-concepts" class="anchor-heading" aria-labelledby="key-testing-concepts"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Key Testing Concepts
+  
+  
+</h4>
+    
+
+<ul>
+  <li><strong>Unit Tests</strong>: Test individual functions in isolation (service layer functions)</li>
+  <li><strong>Integration Tests</strong>: Test how different parts work together (API endpoints with Supertest)</li>
+  <li><strong>Mocking</strong>: Replace external dependencies (database calls) with controlled mock responses</li>
+  <li><strong>Test Coverage</strong>: Ensure your tests cover different scenarios, edge cases, and error conditions</li>
+</ul>
+
+<p>Example Supertest usage for testing an API endpoint:</p>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">request</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">supertest</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">app</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../app</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">POST /api/collections/create</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">should create a new collection</span><span class="dl">'</span><span class="p">,</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">response</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">request</span><span class="p">(</span><span class="nx">app</span><span class="p">)</span>
+      <span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="dl">'</span><span class="s1">/api/collections/create</span><span class="dl">'</span><span class="p">)</span>
+      <span class="p">.</span><span class="nx">send</span><span class="p">({</span>
+        <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Test Collection</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">description</span><span class="p">:</span> <span class="dl">'</span><span class="s1">A test collection</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">questions</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="na">username</span><span class="p">:</span> <span class="dl">'</span><span class="s1">testuser</span><span class="dl">'</span>
+      <span class="p">})</span>
+      <span class="p">.</span><span class="nx">expect</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
+    
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">name</span><span class="p">).</span><span class="nx">toBe</span><span class="p">(</span><span class="dl">'</span><span class="s1">Test Collection</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div></div>
+<h3 id="6-explore-useful-resources">
+  
+  
+    <a href="#6-explore-useful-resources" class="anchor-heading" aria-labelledby="6-explore-useful-resources"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 6. Explore Useful Resources
+  
+  
+</h3>
+    
+
+<ol>
+  <li>Express Tutorial: <a href="https://expressjs.com/en/guide/routing.html">https://expressjs.com/en/guide/routing.html</a></li>
+  <li>MongoDB tutorial: A mini tutorial</li>
+  <li>Mongoose Queries: <a href="https://mongoosejs.com/docs/queries.html">https://mongoosejs.com/docs/queries.html</a></li>
+  <li>Mongoose Documents: <a href="https://mongoosejs.com/docs/documents.html">https://mongoosejs.com/docs/documents.html</a></li>
+  <li>Jest Basics: <a href="https://jestjs.io/docs/getting-started">https://jestjs.io/docs/getting-started</a></li>
+  <li>Mocking in Jest: <a href="https://jestjs.io/docs/mock-functions">https://jestjs.io/docs/mock-functions</a></li>
+  <li>Postman tutorial: API Requests &amp; Postman tutorial</li>
+</ol>
+<h2 id="serverclient-architecture">
+  
+  
+    <a href="#serverclient-architecture" class="anchor-heading" aria-labelledby="serverclient-architecture"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Server/Client Architecture
+  
+  
+</h2>
+    
+
+<p>The schemas for the database are documented in the directory <code class="language-plaintext highlighter-rouge">server/models/schema</code>.
+A class diagram for the schema definition is
+shown below:</p>
+
+<p><img src="/CS4530-Fall-2025/Assignments/ip1/class-diagram.png" alt="image" /></p>
+
+<p>The starter code package, of which this is a part, is divided into 3 main directories: <em>client</em>, <em>server</em>, and <em>testing</em>.</p>
+<h3 id="client">
+  
+  
+    <a href="#client" class="anchor-heading" aria-labelledby="client"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Client
+  
+  
+</h3>
+    
+
+<p>Running <code class="language-plaintext highlighter-rouge">npm run dev</code> will start a client on port 4530.
+The client code uses Axios to send HTTP method requests to the server. You should review the client code to understand
+how axios sends requests and how the response from the server is processed. You don’t need to make any changes to the client code.</p>
+<h3 id="server">
+  
+  
+    <a href="#server" class="anchor-heading" aria-labelledby="server"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Server
+  
+  
+</h3>
+    
+
+<p>The server is responsible for taking HTTP requests from the client and executing them on the database. The server code resides in the <code class="language-plaintext highlighter-rouge">server/</code> directory. The server is responsible for all the data that is sent back and forth to the database.</p>
+
+<p>The main server script is in <code class="language-plaintext highlighter-rouge">server/server.ts</code>. Running <code class="language-plaintext highlighter-rouge">npm run dev</code>
+will start an HTTP server, which will take HTTP requests on <a href="https://localhost:8000/"><strong>https://localhost:8000</strong></a>, and execute them on the running database instance.</p>
+
+<p>You can send requests to the server using a tool like Postman, or by writing scripts that use axios to send requests to <code class="language-plaintext highlighter-rouge">localhost:8000</code>, as you did in the Async activity.</p>
+
+<p>When the server is terminated (using CTRL+C), the message <strong>“Server closed.”</strong> should be displayed. However, the MongoDB service will still be running (You can run <code class="language-plaintext highlighter-rouge">mongosh</code> to confirm)</p>
+<h3 id="testing">
+  
+  
+    <a href="#testing" class="anchor-heading" aria-labelledby="testing"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Testing
+  
+  
+</h3>
+    
+
+<p>Unit tests for the server are in <code class="language-plaintext highlighter-rouge">server/tests/*/*.spec.ts</code>. These are written in Jest, which you are already familiar with.</p>
+
+<p>To run the entire set of server tests, go to the server directory and say <code class="language-plaintext highlighter-rouge">npm run test</code>. Please ensure that the MongoDB server is up and running for the tests to pass.</p>
+
+<p>If you want to run specific tests, we recommend that you install vsc-jest-runner in your VSC, and select the test or tests that you would like to run.</p>
+<h3 id="summary-of-the-default-hostport-settings">
+  
+  
+    <a href="#summary-of-the-default-hostport-settings" class="anchor-heading" aria-labelledby="summary-of-the-default-hostport-settings"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Summary of the default host/port settings
+  
+  
+</h3>
+    
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: left"> </th>
+      <th style="text-align: left"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Client Instance</td>
+      <td style="text-align: left"><a href="https://localhost:4530/">https://localhost:4530/</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Server Instance</td>
+      <td style="text-align: left"><a href="https://localhost:8000/">https://localhost:8000/</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Database Instance</td>
+      <td style="text-align: left"><a href="mongodb://127.0.0.1:27017/fake_so">mongodb://127.0.0.1:27017/fake_so</a></td>
+    </tr>
+  </tbody>
+</table></div>
+<h2 id="recommendations-when-working-on-the-project">
+  
+  
+    <a href="#recommendations-when-working-on-the-project" class="anchor-heading" aria-labelledby="recommendations-when-working-on-the-project"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Recommendations when working on the project
+  
+  
+</h2>
+    
+
+<ol>
+  <li>Open the client application in a browser and interact with it. While interacting, monitor
+the application tab in the browser’s developer tools. The application tab will give you
+information about the HTTP requests the client sends to the server. The HTTP requests
+will contain URIs in their headers. You can use this information to understand the
+endpoints in the server.</li>
+  <li>Read the Jest tests. The Jest tests list all the endpoints the server should have, and the
+types of HTTP method associated with them. Further, the tests also have information
+about the Mongoose functions that need to be invoked for the service to send a
+successful response.</li>
+  <li>Start by defining the schemas in the server/models/schema directory to ensure the data structure is consistent.</li>
+  <li>Ensure that you run all Jest tests. These tests are designed to catch issues early. Once all Jest tests pass, the Cypress tests should also pass, assuming no significant changes have been made to the client’s implementation.</li>
+  <li>Use Postman to interact with and manually test your solutions and verify that database queries work as expected.</li>
+  <li>Follow the <a href="https://neu-se.github.io/CS4530-Fall-2025/policies/debugging/">debugging policy</a> to help in the debugging process.During visiting office hours, TA’s will expect you to have exhausted all initial debugging strategies as outlined in the provided link.</li>
+</ol>
+<h2 id="implementation-tasks">
+  
+  
+    <a href="#implementation-tasks" class="anchor-heading" aria-labelledby="implementation-tasks"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Implementation Tasks
+  
+  
+</h2>
+    
+
+<p>This deliverable has 2 parts; each part will be graded on its own rubric.You should complete the assignment one part at a time, in the order presented here.</p>
+<h3 id="task-1-collection">
+  
+  
+    <a href="#task-1-collection" class="anchor-heading" aria-labelledby="task-1-collection"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Task 1: Collection
+  
+  
+</h3>
+    
+
+<p>A collection is a curated set of questions related to a specific topic or theme. Users of the website should be able to do the following:</p>
+
+<ol>
+  <li>Create a new collection.</li>
+  <li>Delete an existing collection.</li>
+  <li>Create a new question in an existing collection.</li>
+  <li>Retrieve a collection by Id</li>
+  <li>Retrieve all collections by the username of the user that created them.</li>
+</ol>
+<h4 id="steps-to-achieve-this">
+  
+  
+    <a href="#steps-to-achieve-this" class="anchor-heading" aria-labelledby="steps-to-achieve-this"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Steps to Achieve This
+  
+  
+</h4>
+    
+
+<ol>
+  <li>
+    <p>Create the Mongoose schema for collection</p>
+
+    <p>The collection schema defines the structure for storing a collection document in the MongoDB database. Each collection must have the following:</p>
+
+    <ul>
+      <li>a <strong>name</strong> of type string. This is required.</li>
+      <li>an optional <strong>description</strong> of type string.</li>
+      <li>a list of <strong>questions</strong> associated with the collection. An empty list denotes the collection has no questions yet.</li>
+      <li>a required <strong>username</strong> of type string of the user that created the collection.</li>
+      <li>a boolean property <strong>isPrivate</strong> to denote if the collection is private to the user that created it or if it can be used by other users. A collection is private by default.</li>
+    </ul>
+
+    <p>Define the schema in <code class="language-plaintext highlighter-rouge">server/models/schema/collection.schema.ts</code>. You can verify the schema by running the scripts described in Section 4 of this document.</p>
+  </li>
+  <li>
+    <p>Define a Mongoose model for collection</p>
+
+    <p>Mongoose requires us to construct a data layer object from a given schema. The data layer object serves as the interface to the database. To this end, define the collection model in <code class="language-plaintext highlighter-rouge">server/models/collection.model.ts</code>.</p>
+  </li>
+  <li>
+    <p>Define relevant types</p>
+
+    <p>Define the relevant types needed for the collections feature in <code class="language-plaintext highlighter-rouge">server/types/types.d.ts</code>. Be sure to avoid repeated or reduntant type definitions.</p>
+
+    <p><strong>Please Note:</strong> Either modify or use defined types accordingly, some types have already been defined in the shared/types folder and they can be used or modified as needed.</p>
+  </li>
+  <li>
+    <p>Implement the service layer functions</p>
+
+    <p>The role of the service layer functions is to interact with the data layer object and the controllers. To this end, define the following functions in <code class="language-plaintext highlighter-rouge">server/services/collection.service.ts</code>:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">createCollection(collection)</code> creates a new collection in the database if the collection does not exist.</li>
+      <li><code class="language-plaintext highlighter-rouge">deleteCollection(id, username)</code> removes a collection in the database with the given id and created by a user with the given username. It returns the deleted collection if successful, otherwise throws an error.</li>
+      <li><code class="language-plaintext highlighter-rouge">getCollectionByUsername(username, currentUsername)</code> returns all collections stored in the database for a given username. If the given username is not the same as the current user making the request then the private collections must not be returned. Throws an error if the relevant collections cannot be retrieved.</li>
+      <li><code class="language-plaintext highlighter-rouge">getCollectionById(id, username)</code> returns the collection for a given collection ID and created by a user with the username. Throws an error if the collection cannot be retrieved or a private collection is being requested by a user who did not create it.</li>
+      <li><code class="language-plaintext highlighter-rouge">addQuestionToCollection(id, questionId, username)</code> adds a question with a question ID to an existing collection with a given ID and username. If the question being added then removes the question and updates the collection, otherwise creates a new question with the given ID and updates the collection. In either case it returns the updated collection. Throws an error if the collection does not exist or could not be updated.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Define the endpoints</p>
+
+    <p>Define the following express REST API endpoints in <code class="language-plaintext highlighter-rouge">server/controller/collection.controller.ts</code>:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">createCollectionRoute(req, res)</code> takes an HTTP request containing the metadata in its body necessary to create a collection and creates a collection. It returns the created collection as response.</li>
+      <li><code class="language-plaintext highlighter-rouge">deleteCollectionRoute(req, res)</code> takes an HTTP request containing a collection ID and the username of the collection and deletes the corresponding collection. It returns the deleted collection as response if the delete was successful.</li>
+      <li><code class="language-plaintext highlighter-rouge">toggleSaveQuestionRoute(req, res)</code> takes an HTTP request with the question ID that needs to be saved and the collection ID where the question will be a part of. It returns the updated collection as response.</li>
+      <li><code class="language-plaintext highlighter-rouge">getCollectionsByUsernameRoute(req, res)</code> takes an HTTP request containing the username of the currently logged in user and the username of some other user. It returns all collections for the username as response.</li>
+      <li><code class="language-plaintext highlighter-rouge">getCollectionByIdRoute(req, res)</code> takes an HTTP request containing the collection ID and the username of the user that created the collection. It returns the corresponding collection as response.</li>
+    </ul>
+
+    <p>All endpoints return a status code of 200 in their response. However, in case of an error they return a status code 500 in their response and in case of an invalid request they return a status code of 400 in their reponse.</p>
+  </li>
+  <li>
+    <p>Add routes to endpoints</p>
+
+    <p>Define the appropriate API routes on the Express router for each of the functions implemented in the previous steps.</p>
+
+    <p><strong>Collection Router Implementation Hints:</strong></p>
+
+    <ul>
+      <li>Add router definitions at the end of your collectionController function, before returning the router</li>
+      <li>Use appropriate HTTP methods:
+        <ul>
+          <li>POST for <code class="language-plaintext highlighter-rouge">/create</code> - creating new collections</li>
+          <li>DELETE for <code class="language-plaintext highlighter-rouge">/delete/:collectionId</code> - removing collections (use collectionId as URL parameter)</li>
+          <li>PATCH for <code class="language-plaintext highlighter-rouge">/toggleSaveQuestion</code> - updating collections with questions</li>
+          <li>GET for retrieving collections (use URL parameters like <code class="language-plaintext highlighter-rouge">:username</code>, <code class="language-plaintext highlighter-rouge">:collectionId</code> where needed)</li>
+        </ul>
+      </li>
+      <li>Collection routes should include: <code class="language-plaintext highlighter-rouge">/create</code>, <code class="language-plaintext highlighter-rouge">/delete/:collectionId</code>, <code class="language-plaintext highlighter-rouge">/toggleSaveQuestion</code>, <code class="language-plaintext highlighter-rouge">/getCollectionsByUsername/:username</code>, <code class="language-plaintext highlighter-rouge">/getCollectionById/:collectionId</code>.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Write unit tests</p>
+
+    <p>We’ve provided initial tests to provide some information on the expected behavior of the routes and functions. Using the requirement descriptions above, write additional tests for all the added functions and routes, covering different branches, edge cases, etc. to verify the correctness of your code.</p>
+
+    <p>Add your unit tests to the file <code class="language-plaintext highlighter-rouge">server/tests/services/collection.service.spec.ts</code> and <code class="language-plaintext highlighter-rouge">server/tests/controllers/collection.controller.spec.ts</code></p>
+
+    <p>In addition to automated tests, you should also manually test your route using Postman and MongoDB Compass to ensure that any database queries are correct since we use database mocks while testing with Jest.</p>
+  </li>
+</ol>
+<h3 id="task-2-communities">
+  
+  
+    <a href="#task-2-communities" class="anchor-heading" aria-labelledby="task-2-communities"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Task 2: Communities
+  
+  
+</h3>
+    
+
+<p>A community is a subgroup of users with common interests. A community can be public or private. A public community is open to all users of the platform. On the other hand a private community is only accessible to its members. A community always has an admin selected from its participants/members. Extend the current implementation with the following features:</p>
+
+<ol>
+  <li>Retrieve details of an existing community</li>
+  <li>Retrieve details of all communities</li>
+  <li>Join/leave a community</li>
+  <li>Create a new community</li>
+  <li>Delete an existing community</li>
+</ol>
+<h4 id="steps-to-achieve-this-1">
+  
+  
+    <a href="#steps-to-achieve-this-1" class="anchor-heading" aria-labelledby="steps-to-achieve-this-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Steps to Achieve This
+  
+  
+</h4>
+    
+
+<ol>
+  <li>
+    <p>Create the schema</p>
+
+    <p>The community schema defines the structure of a document in the community collection of the MongoDB database. Each community must have the following:</p>
+
+    <ul>
+      <li>A required unique <strong>name</strong> of type string.</li>
+      <li>A required <strong>description</strong> of type string.</li>
+      <li>A list of <strong>participants</strong> in the community.</li>
+      <li>A <strong>visibility</strong> type for the community – always must be public or private. The default visibility of a community is public.</li>
+      <li>a required <strong>admin</strong> user of type string.</li>
+    </ul>
+
+    <p>Define the schema in <code class="language-plaintext highlighter-rouge">server/models/schema/community.schema.ts</code>.</p>
+
+    <p>Make sure the Questions schema structure in <code class="language-plaintext highlighter-rouge">server/models/schema/question.schema.ts</code> has a reference to an existing <code class="language-plaintext highlighter-rouge">community</code>.</p>
+
+    <p>You can verify the schema by running the scripts described in Section 4 of this document.</p>
+  </li>
+  <li>
+    <p>Define the mongoose model</p>
+
+    <p>Mongoose requires us to construct a data layer object from a given schema. The data layer object serves as the interface to the database. To this end, define the community model in <code class="language-plaintext highlighter-rouge">server/models/community.model.ts</code>.</p>
+  </li>
+  <li>
+    <p>Define the relevant types</p>
+
+    <p>Define the relevant types needed for the communities feature in <code class="language-plaintext highlighter-rouge">server/types/types.d.ts</code>. Be sure to avoid repeated or reduntant type definitions.</p>
+
+    <p><strong>Please Note:</strong> Either modify or use defined types accordingly, some types have already been defined in the shared/types folder and they can be used or modified as needed.</p>
+  </li>
+  <li>
+    <p>Implement the service Layer functions</p>
+
+    <p>Define the following functions in <code class="language-plaintext highlighter-rouge">server/services/community.service.ts</code>:</p>
+
+    <ul>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">getCommunity(id)</code> returns an object based on the document in the community collection for an existing community ID. It returns an object with an error property if it fails to retrieve the document.</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">getAllCommunities()</code> returns all communities in the community collection in the database. It returns an object with the error property if the retrieval fails.</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">toggleCommunityMembership(id, username)</code> takes a community ID and a username and adds the user with the given username as a participant to the community with the given ID if the user is not a participant. If the user is a participant but not an admin in the community then it removes them from the community. It returns an object with the error property if the update to the relevant document fails.</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">createCommunity(community)</code> creates a new community in the database with the given community data and returns the newly created community. It returns an object with the error property if the creation fails.</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">deleteCommunity(id, username)</code> deletes an existing community with the given id from the database when requested by a user with the given username and if the user is an admin. It returns an object with the error property if deletion fails or the user is not an admin of the community.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Define the endpoints</p>
+
+    <ul>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">getCommunityRoute(req, res)</code> takes an HTTP request that contains a community ID and returns the found community as response.</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">getAllCommunitiesRoute(req, res)</code> takes an HTTP request and returns all communities as response.</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">toggleMembershipRoute(req, res)</code> takes an HTTP request containing the username of the user that wants to leave/join a community with an ID. It returns the updated community object as response.</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">createCommunityRoute(req, res)</code> takes an HTTP request containing the necessary metadata needed to create a community and returns the newly created community as response.</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">deleteCommunityRoute(req, res)</code> takes an HTTP request containing the username of the user requesting the delete and the community ID that needs to be deleted. It returns the deleted community as response.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Add routes to endpoints</p>
+
+    <p>Define the appropriate API routes on the Express router for each of the functions implemented in the previous steps.</p>
+
+    <p><strong>Community Router Implementation Hints:</strong></p>
+
+    <ul>
+      <li>Add router definitions at the end of your communityController function, before returning the router</li>
+      <li>Use appropriate HTTP methods:
+        <ul>
+          <li>GET for <code class="language-plaintext highlighter-rouge">/getCommunity/:communityId</code> - retrieving a specific community (use communityId as URL parameter)</li>
+          <li>GET for <code class="language-plaintext highlighter-rouge">/getAllCommunities</code> - retrieving all communities</li>
+          <li>POST for <code class="language-plaintext highlighter-rouge">/toggleMembership</code> - updating community membership (sends data in request body)</li>
+          <li>POST for <code class="language-plaintext highlighter-rouge">/create</code> - creating new communities</li>
+          <li>DELETE for <code class="language-plaintext highlighter-rouge">/delete/:communityId</code> - removing communities (use communityId as URL parameter)</li>
+        </ul>
+      </li>
+      <li>Community routes should include: <code class="language-plaintext highlighter-rouge">/getCommunity/:communityId</code>, <code class="language-plaintext highlighter-rouge">/getAllCommunities</code>, <code class="language-plaintext highlighter-rouge">/toggleMembership</code>, <code class="language-plaintext highlighter-rouge">/create</code>, <code class="language-plaintext highlighter-rouge">/delete/:communityId</code></li>
+      <li>Note: <code class="language-plaintext highlighter-rouge">/toggleMembership</code> uses POST (not PATCH) and sends communityId and username in the request body</li>
+    </ul>
+  </li>
+  <li>
+    <p>Write unit tests</p>
+
+    <p>We’ve provided initial tests to provide some information on the expected behavior of the routes and functions. Using the requirement descriptions above, write additional tests for all the added functions and routes, covering different branches, edge cases, etc. to verify the correctness of your code.</p>
+
+    <p>Add your unit tests to the file <code class="language-plaintext highlighter-rouge">server/tests/services/community.service.spec.ts</code> and <code class="language-plaintext highlighter-rouge">server/tests/controllers/community.controller.spec.ts</code></p>
+
+    <p>In addition to automated tests, you should also manually test your route using Postman and MongoDB Compass to ensure that any database queries are correct since we use database mocks while testing with Jest.</p>
+  </li>
+</ol>
+<h2 id="submission-instructions--grading">
+  
+  
+    <a href="#submission-instructions--grading" class="anchor-heading" aria-labelledby="submission-instructions--grading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Submission Instructions &amp; Grading
+  
+  
+</h2>
+    
+
+<p>You will submit your assignment using GitHub Classroom.</p>
+
+<p>This submission will be scored out of 100 points, 80 of which will be awarded for implementation of tasks and accompanying tests, and the remaining 20 in the manual testing section covered below.</p>
+
+<p>The grading repo has the autograder’s script files in server/.grading. You are not allowed or supposed to change those files. Editing those files will amount to 0 for the entire assignment. If you accidentally changed them then let us know and we can help you revert those changes. During grading we will verify to see if you changed these files.</p>
+
+<p>When you push to your repo, you will see the autograder run. In the actions tab of your repo look for Autograding Tests job to view your score and feedback from the autograder. The autograder has a total of 80 pts and the breakdown is as follows:</p>
+<ul>
+  <li><strong>Task 1 (Collections)</strong> - 25 pts
+    <ul>
+      <li>Correctness tests for service layer - 15 pts</li>
+      <li>Correctness tests for controller layer - 10 pts</li>
+    </ul>
+  </li>
+  <li><strong>Task 2 (Communities)</strong> - 25 pts
+    <ul>
+      <li>Correctness tests for service layer - 15 pts</li>
+      <li>Correctness tests for controller layer - 10 pts</li>
+    </ul>
+  </li>
+  <li><strong>Style checks for lint</strong> - 10 pts <em>(no partial credit is awarded)</em></li>
+  <li><strong>Regression tests</strong> - 10 pts</li>
+  <li>
+    <p><strong>Coverage for tests</strong> - 10 pts</p>
+
+    <div class="table-wrapper"><table>
+      <thead>
+        <tr>
+          <th>Coverage Percentage</th>
+          <th>Points Awarded</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>≥ 95%</td>
+          <td>10 pts (Full Credit)</td>
+        </tr>
+        <tr>
+          <td>≥ 90%</td>
+          <td>6 pts</td>
+        </tr>
+        <tr>
+          <td>≥ 85%</td>
+          <td>2 pts</td>
+        </tr>
+        <tr>
+          <td>≥ 80%</td>
+          <td>1 pt</td>
+        </tr>
+        <tr>
+          <td>&lt; 80%</td>
+          <td>0 pts</td>
+        </tr>
+      </tbody>
+    </table></div>
+  </li>
+</ul>
+
+<p>During development, you may encounter various linting errors. Some common errors include:</p>
+<ol>
+  <li>Line Ending Errors (CRLF vs LF)
+    <ul>
+      <li>You might see carriage return characters (\r, represented as ␍) at the end of lines</li>
+      <li>This usually happens when files have Windows-style line endings (\r \n) instead of Unix-style (\n)</li>
+    </ul>
+  </li>
+  <li>Unused Variables/Functions
+    <ul>
+      <li>ESLint will flag unused variables or functions</li>
+    </ul>
+  </li>
+  <li>Import/Export Issues
+    <ul>
+      <li>Missing imports or incorrect module paths</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Your code will automatically be evaluated for linter errors and warnings.</p>
+
+<ul>
+  <li>Lint errors result in a style score of 0/10. No partial credit is awarded in this case.</li>
+  <li>Line endings will not be counted as errors.</li>
+</ul>
+
+<p>The starter code comes with some lint problems, You are expected you to fix these linter problems, many of them will be fixed as you implement the tasks.</p>
+
+<p><strong>The use of <code class="language-plaintext highlighter-rouge">eslint-disable</code> statements is NOT allowed. Each instance outside what is provided in the starter code will have points deducted.</strong></p>
+
+<p>You can run the following command within the client or server to check for some common lint errors</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run lint
+</code></pre></div></div>
+
+<p>You can run the following command within the client or server to fix some common lint errors</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run lint:fix
+</code></pre></div></div>
+<h4 id="testing-1">
+  
+  
+    <a href="#testing-1" class="anchor-heading" aria-labelledby="testing-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Testing
+  
+  
+</h4>
+    
+
+<p>You will be provided with starter code that includes a set of tests. Your task is to ensure that all existing tests pass and to create additional tests to cover any new functionality or edge cases.</p>
+
+<p><strong>Please Note</strong>: The server tests will fail the first time students run them but this is expected behavior.Please rerun the tests after you have completed the implementation.All server tests will pass after students have implemented the features as well as the corresponding tests. Please also  take note until all tests have passed, the Github actions will fail; this is also an expected behavior.These actions will pass when 1.Community and Collection features are implemented and 2.Tests are implemented.</p>
+<h3 id="manual-grading">
+  
+  
+    <a href="#manual-grading" class="anchor-heading" aria-labelledby="manual-grading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Manual Grading
+  
+  
+</h3>
+    
+
+<p>Your code will be manually evaluated for conformance to our <a href="https://neu-se.github.io/CS4530-Fall-2025/policies/style/">course style guide</a>. <strong>Do not wait to run the linter until the last minute</strong>. To check for linter errors, run the command <code class="language-plaintext highlighter-rouge">npm run lint</code> from the terminal. The handout contains the same ESlint configuration that is used by our grading script.</p>
+
+<p>This manual evaluation will account for 20 points on this assignment. We will manually evaluate your code for style on the following rubric:</p>
+
+<ul>
+  <li><strong>Manual grading</strong> - 20 pts
+    <ul>
+      <li><strong>Documentation &amp; design compliance</strong> - 6 pts
+        <ul>
+          <li>All public properties and methods (other than getters, setters, and constructors) are documented with JSDoc-style comments that describe what the property/method does, as defined in our style guide.</li>
+          <li>The code and tests that you write generally follows the design principles discussed in week one. In particular, your design does not have duplicated code that could have been refactored into a shared method.</li>
+          <li>No duplicate code is allowed.</li>
+        </ul>
+      </li>
+      <li><strong>Manual testing with Postman</strong> - 14 pts</li>
+    </ul>
+  </li>
+</ul>
+
+<p>We will review your code and note each violation of this rubric. We will deduct 2 points for each violation, up to a maximum of deducting all 10 style points.</p>
+<h4 id="github-actions-for-test-and-lint-output">
+  
+  
+    <a href="#github-actions-for-test-and-lint-output" class="anchor-heading" aria-labelledby="github-actions-for-test-and-lint-output"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> GitHub Actions for Test and Lint Output
+  
+  
+</h4>
+    
+
+<p>Once your submission is pushed to your main branch, GitHub will automatically run linting and the tests in <code class="language-plaintext highlighter-rouge">server/tests</code> for your submission. Check the Actions tab on GitHub classroom to see the output of the run. This output will be used for grading, so ensure there are no errors in the Actions run.</p>
+
+<p><img src="/CS4530-Fall-2025/Assignments/ip1/ActionsTab.png" alt="image" /></p>
+
+<blockquote>
+  <p class="note">Please update the node version used in the github action workflow to be <code class="language-plaintext highlighter-rouge">22.x</code> instead of <code class="language-plaintext highlighter-rouge">20.x</code>. This will fix any memory leaks errors raised while executing the test suite. In particular, change lines 23-26 of <code class="language-plaintext highlighter-rouge">.github/workflows/main.yml</code> to be:</p>
+</blockquote>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Set up Node.js 22.x</span>
+  <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/setup-node@v4</span>
+  <span class="na">with</span><span class="pi">:</span>
+    <span class="na">node-version</span><span class="pi">:</span> <span class="s2">"</span><span class="s">22.x"</span>
+</code></pre></div></div>
+<h4 id="debugging">
+  
+  
+    <a href="#debugging" class="anchor-heading" aria-labelledby="debugging"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Debugging
+  
+  
+</h4>
+    
+
+<p>If you need help troubleshooting a problem, be sure to follow all the steps outlined in the course’s <a href="/CS4530-Fall-2025/policies/debugging/">debugging policy</a>. This will ensure you have exhausted all initial debugging strategies before reaching out for assistance from the TAs.</p>
+<h3 id="academic-integrity">
+  
+  
+    <a href="#academic-integrity" class="anchor-heading" aria-labelledby="academic-integrity"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Academic Integrity
+  
+  
+</h3>
+    
+
+<p>Please refer to the <a href="https://neu-se.github.io/CS4530-Fall-2025/policies/#academic-integrity">course policy page</a> for more details.</p>
+
+<p><strong>For this assignment, the use of co-pilot or other generative AI technologies such as ChatGPT is not allowed.</strong></p>
+
+<p>```</p>
+
+          
+
+          
+        </main>
+        
+
+  <hr>
+  <footer>
+    
+
+    <p class="text-small text-grey-dk-100 mb-0">&copy; 2025-26 Adeel Bhutta, Joydeep Mitra and Mitch Wand. Released under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a> license</p>
+
+    
+  </footer>
+
+
+      </div>
+    </div>
+    
+      
+
+<div class="search-overlay"></div>
+
+    
+  </div>
+
+  
+</body>
+</html>
+

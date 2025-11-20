@@ -1,0 +1,552 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <link rel="stylesheet" href="/CS4530-Fall-2025/assets/css/just-the-docs-default.css">
+
+  
+
+  
+    <script src="/CS4530-Fall-2025/assets/js/vendor/lunr.min.js"></script>
+  
+
+  <script src="/CS4530-Fall-2025/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Requirments Engineering with VSD | CS4530, Fall 2025</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Requirments Engineering with VSD" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Northeastern University CS 4530 “Fundamentals of Software Engineering”, Fall 2025. Professors Adeel Bhutta, Joydeep Mitra and Mitch Wand." />
+<meta property="og:description" content="Northeastern University CS 4530 “Fundamentals of Software Engineering”, Fall 2025. Professors Adeel Bhutta, Joydeep Mitra and Mitch Wand." />
+<link rel="canonical" href="https://neu-se.github.io/CS4530-Fall-2025/tutorials/week1-user-stories" />
+<meta property="og:url" content="https://neu-se.github.io/CS4530-Fall-2025/tutorials/week1-user-stories" />
+<meta property="og:site_name" content="CS4530, Fall 2025" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Requirments Engineering with VSD" />
+<script type="application/ld+json">
+{"description":"Northeastern University CS 4530 “Fundamentals of Software Engineering”, Fall 2025. Professors Adeel Bhutta, Joydeep Mitra and Mitch Wand.","headline":"Requirments Engineering with VSD","dateModified":"2025-11-20T01:19:56+00:00","url":"https://neu-se.github.io/CS4530-Fall-2025/tutorials/week1-user-stories","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+</head>
+
+<body>
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+  <title>Link</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+  </svg>
+</symbol>
+
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+  <title>Menu</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+</symbol>
+
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+  <title>Expand</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+</symbol>
+
+  <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
+<symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+  <title id="svg-external-link-title">(external link)</title>
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+</symbol>
+
+  
+    <symbol id="svg-doc" viewBox="0 0 24 24">
+  <title>Document</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+  </svg>
+</symbol>
+
+    <symbol id="svg-search" viewBox="0 0 24 24">
+  <title>Search</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</symbol>
+
+  
+  
+    <!-- Bootstrap Icons. MIT License: https://github.com/twbs/icons/blob/main/LICENSE.md -->
+<symbol id="svg-copy" viewBox="0 0 16 16">
+  <title>Copy</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+  </svg>
+</symbol>
+<symbol id="svg-copied" viewBox="0 0 16 16">
+  <title>Copied</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"/>
+  </svg>
+</symbol>
+
+  
+</svg>
+
+  <div class="side-bar">
+  <div class="site-header" role="banner">
+    <a href="/CS4530-Fall-2025/" class="site-title lh-tight">
+  CS4530, Fall 2025
+
+</a>
+    <button id="menu-button" class="site-button btn-reset" aria-label="Toggle menu" aria-pressed="false">
+      <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
+    </a>
+  </div>
+  <nav aria-label="Main" id="site-nav" class="site-nav">
+    
+    
+      <ul class="nav-list"><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Calendar category" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+        </button><a href="/CS4530-Fall-2025/calendar/" class="nav-list-link">Calendar</a><ul class="nav-list"><li class="nav-list-item "><a href="/CS4530-Fall-2025/calendar/s1" class="nav-list-link">Section 1 - Calendar</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/calendar/s2" class="nav-list-link">Section 2 - Calendar</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/calendar/s5" class="nav-list-link">Section 5 - Calendar</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/calendar/s7" class="nav-list-link">Section 7 - Calendar</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/calendar/s8" class="nav-list-link">Section 8 - Calendar</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/calendar/s9" class="nav-list-link">Section 9 - Calendar</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Modules category" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+        </button><a href="/CS4530-Fall-2025/modules/" class="nav-list-link">Modules</a><ul class="nav-list"><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/1-requirements-testing" class="nav-list-link">1 - Orientation & Requirements</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/2-requirements-to-code" class="nav-list-link">2 - From Requirements to Code</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/3-test-adequacy" class="nav-list-link">3 - Test Adequacy</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/4-code-level-design" class="nav-list-link">4 - Code-Level Design Principles</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/5-interaction-level-design-patterns" class="nav-list-link">5 - Interaction-Level Design Patterns</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/6-concurrency-patterns-in-typescript" class="nav-list-link">6 - Concurrency Patterns in Typescript</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/7-software-process" class="nav-list-link">7 - Software Process</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/8-react" class="nav-list-link">8 - React</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/9-patterns-of-react" class="nav-list-link">9 - React Hooks</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/10-app-patterns" class="nav-list-link">10 - Application Level Patterns</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/11-larger-tests" class="nav-list-link">11 - Tests With Larger Scope</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/12-security" class="nav-list-link">12 - Security</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/13-continuous-development" class="nav-list-link">13 - Continuous Development</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/14-cloud-infrastructure" class="nav-list-link">14 - Cloud Infrastructure</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/15-open-source" class="nav-list-link">15 - Open Source</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/16-ethics" class="nav-list-link">16 - Ethics and Equity in SE</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/modules/17-ai" class="nav-list-link">17 - Coding with AI</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Assignments category" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+        </button><a href="/CS4530-Fall-2025/assignments/" class="nav-list-link">Assignments</a><ul class="nav-list"><li class="nav-list-item "><a href="/CS4530-Fall-2025/assignments/ip1" class="nav-list-link">Individual Project 1</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/assignments/ip2" class="nav-list-link">Individual Project 2</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/assignments/project-overview" class="nav-list-link">Project Overview</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/assignments/project-plan" class="nav-list-link">Preliminary Project Plan</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/assignments/revised-project-plan" class="nav-list-link">Revised Project Plan</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/assignments/project-deliverable" class="nav-list-link">Project Final Deliverable</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/assignments/project-grading" class="nav-list-link">Final Project Grading</a></li></ul></li><li class="nav-list-item active"><button class="nav-list-expander btn-reset" aria-label="toggle items in Tutorials category" aria-pressed="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+        </button><a href="/CS4530-Fall-2025/tutorials/" class="nav-list-link">Tutorials</a><ul class="nav-list"><li class="nav-list-item "><a href="/CS4530-Fall-2025/tutorials/week1-getting-started" class="nav-list-link">Installing a Development Environment</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/tutorials/week1-typescript-basics" class="nav-list-link">Typescript Basics</a></li><li class="nav-list-item  active"><a href="/CS4530-Fall-2025/tutorials/week1-user-stories" class="nav-list-link active">Requirments Engineering with VSD</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/tutorials/week1-unit-testing" class="nav-list-link">Unit Testing with Jest</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/tutorials/week1-mongodb-mongoose" class="nav-list-link">MongoDB and Mongoose</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/tutorials/week1-apirequests-postman" class="nav-list-link">Guide to API Requests and Installing Postman</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/tutorials/week3-socketio-basics" class="nav-list-link">Socket.IO Tutorial</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/tutorials/week4-react-basics" class="nav-list-link">React Tutorial</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/tutorials/week5-cypress" class="nav-list-link">UI Testing with Cypress</a></li></ul></li><li class="nav-list-item"><a href="/CS4530-Fall-2025/textbooks/" class="nav-list-link">Textbooks</a></li><li class="nav-list-item"><a href="/CS4530-Fall-2025/staff/" class="nav-list-link">Staff</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Policies category" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+        </button><a href="/CS4530-Fall-2025/policies/" class="nav-list-link">Policies</a><ul class="nav-list"><li class="nav-list-item "><a href="/CS4530-Fall-2025/policies/ai" class="nav-list-link">Policy on Use of AI</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/policies/style/" class="nav-list-link">Code Style</a></li><li class="nav-list-item "><a href="/CS4530-Fall-2025/policies/debugging/" class="nav-list-link">Debugging</a></li></ul></li><li class="nav-list-item"><a href="/CS4530-Fall-2025/resources/" class="nav-list-link">Other Resources</a></li></ul>
+
+    
+  </nav>
+
+  
+  
+    <footer class="site-footer">
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+    </footer>
+  
+</div>
+
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+  
+    
+
+<div class="search" role="search">
+  <div class="search-input-wrap">
+    <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search CS4530, Fall 2025" aria-label="Search CS4530, Fall 2025" autocomplete="off">
+    <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+  </div>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+  
+  
+  
+</div>
+
+    <div id="main-content-wrap" class="main-content-wrap">
+      <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb-nav-list">
+  
+    <li class="breadcrumb-nav-list-item"><a href="/CS4530-Fall-2025/tutorials/">Tutorials</a></li>
+  <li class="breadcrumb-nav-list-item"><span>Requirments Engineering with VSD</span></li>
+  </ol>
+</nav>
+      <div id="main-content" class="main-content">
+        <main>
+          
+            <div class="fs-1 text-right fw-300">Last updated: Nov 20, 25 01:19 UTC | <a href="/CS4530-Fall-2025/tutorials/week1-user-stories">Permalink</a></div>
+
+<p>This tutorial provides a description of Value Sensitive Design (VSD) and the process of applying it to define 
+requirements. Further, it provides examples for user stories, conditions of satisfaction and how a minimum viable product can be defined. The process description and the examples will help understand the process of collecting requirements
+as user stories and how to document them in a systematic way.</p>
+
+<p>Contents:</p>
+
+<ul>
+  <li><a href="#what-is-vsd">What is VSD?</a></li>
+  <li><a href="#user-stories-and-conditions-of-satisfaction">User Stories and Conditions of Satisfaction</a></li>
+  <li><a href="#user-stories-and-project-planning">User Stories and Project Planning</a></li>
+  <li><a href="#user-stories-and-test-driven-development">User Stories and Test-Driven Development</a></li>
+  <li><a href="#examples">Examples</a></li>
+</ul>
+<h1 id="what-is-vsd">
+  
+  
+    <a href="#what-is-vsd" class="anchor-heading" aria-labelledby="what-is-vsd"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> What is VSD?
+  
+  
+</h1>
+    
+
+<p>Like any technology, software reflects and affects human values. Ignoring values during the requirements collection and definition phase is irresponsible as it leads to software whose impact on communities that use it may be unintentional at best or actively harmful at worst.</p>
+
+<p>Value sensitive design (VSD) is a framework to systematically reason about values in software design. This involves the following:</p>
+
+<ul>
+  <li>Combine empirical, value, and technical investigations</li>
+  <li>Recognize the stakeholders involved and consider their values.</li>
+  <li>Consider diverse perspectives.</li>
+</ul>
+
+<p>The three types of investigation – empirical, value, and technical into a value often require collaboration with experts in different fields ranging from sociology to philosophy to computer science. While this is difficult to practice without
+access to a diverse team, this tutorial, through a few examples, will help you appreciate how the process can be applied to requirements gathering.</p>
+
+<p>Before proceeding it is helpful to note what VSD is not! VSD does not prescribe a system of ethics or specific values, rather it incorporates value reflections in the requirements choosing process.</p>
+<h2 id="informed-consent-online-example">
+  
+  
+    <a href="#informed-consent-online-example" class="anchor-heading" aria-labelledby="informed-consent-online-example"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Informed Consent Online Example
+  
+  
+</h2>
+    
+
+<p>Web applications today are pervasive. They have access to huge amounts of personal information to enable important
+services to banking, education, entertainment, etc. Often such information is collected surreptiously, without the user’s
+consent. One way to address this problem is to encrypt personal data and prevent unauthorized access. However, solutions like encryption place the burden on automated technical mechanisms, with the software engineer as adjudicator. Another way is through informed consent, in which direct and indirect stakeholders, based on how the application works, choose whether to provide their personal data or not.</p>
+
+<p>To understand informed consent, we need to investigate how the concept works in the real-world (empircal) and reflect on how the concept may manifest in different ways (value investigation). The idea hinges on two concepts – informed and consent. Informed encompasses <em>disclosure</em> and <em>comprehension</em>. Disclosure refers to providing accurate information about
+the pros and cons of taking an action. If the action involves collecting personal information then the following should be made explicit: (1) what is being collected, (2) who will have access to it, (3) how long will it be stored, (4) what will it be used for, and (5) whether the data will be anonymized. Comprehension is complex in a digital or virtual environment due to the lack of face-to-face interactions. Hence as designers, we will need to analyze the interventions that need to be
+created to ensure that the users understand the disclosures (e.g., a quiz).</p>
+
+<p>The second construct of <em>consent</em> encompasses <em>voluntariness</em>, <em>competence</em>, and <em>agreement</em>. <em>Voluntariness</em> simply means to ensure that the action was not coerced or manipulated. For e.g., the decision to accept or reject disclosure will affect essential usage. <em>Competence</em> refers to the mental and physical capabilities needed to give consent. For e.g., web applications meant for children will need to be mindful of this component. Finally, <em>agreement</em> refers to a clear opportunity to accept or decline participation. For e.g., in this context, the ability to accept or reject must be visible and
+accessbile and not obscured in layers.</p>
+
+<p>Now that we have reasoned about the idea of informed consent in our context, we need to think of the stakeholders that will be affected by this requirement. Considering different stakeholder viewpoints is a part of the value investigation process. Stakeholders can be direct, that is those who directly interact with the system, and indirect, that is those who don’t but are affected nevertheless. For the system we are developing, site users are direct stakeholders as they will interact with the system that will eventually implement informed consent. On the other hand, there are indirect stakeholders that might be affected such as site owners, advertising partners, and regulators. This list is by no means comprehensive. The more diverse stakeholders you can think of the more wholistic your requirements will be. Of course they
+also have to be realistic.</p>
+
+<p>Often stakeholders can have different goals, interests, and values. Sometimes they can align and other other times they might conflict with each other. For e.g., site users might want to browse the site anonymously whereas site owners might want to monetize site usage by making personal data available to advertisers. Value investigation also includes resolving such tensions in the requirements collection phase. Suppose for our system, we have identified that the following values are important for our stakeholders – privacy for site users, accountability for site owners, transparency for advertisers, and compliance for regulators. These values will drive the requirements that we end up defining for our system.</p>
+
+<p>Once we have completed the emprical and value investigation of informed consent, that is, identified direct and indirect stakeholders and resolved the value tensions involved, we can think about how to implement it
+given our technical constraints. This is where we translate our analysis into user stories and conditions of satisfaction (see Examples section). Before we see how to do this let’s take a detour and understand the structural constraints (or grammar) of defining user stories and conditions of satisfactions.</p>
+<h1 id="user-stories-and-conditions-of-satisfaction">
+  
+  
+    <a href="#user-stories-and-conditions-of-satisfaction" class="anchor-heading" aria-labelledby="user-stories-and-conditions-of-satisfaction"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> User Stories and Conditions of Satisfaction
+  
+  
+</h1>
+    
+
+<p>A user story is an informal, general explanation of a software feature written from the perspective of the identified <strong>stakeholders</strong>. A user story is always of the following form:</p>
+
+<p>As a <code>&lt;staekholder&gt;</code> I can <code>&lt;perform action&gt;</code> so that I can <code>&lt;receive benefit&gt;</code></p>
+
+<p>User stories represent something the stakeholder might want. There will be many ways to give them the benefit that they want.</p>
+
+<p>We need to refine these in order to determine what to build. We call these refinements “conditions of satisfaction” (COS)</p>
+
+<p>A COS should be a specific capability or behavior that the stakeholder expects, in the stakeholder’s terms.  It should be visible to and verifiable by the stakeholder.</p>
+
+<p>The COS is a guide to the implementation team. It should be specific enough so that the implementation team has a clear idea of what they are building.
+There still may be many ways to implement a COS. For example, a COS probably would not specify any of the graphic or layout details; these would likely be left to the implementation team.</p>
+<h1 id="user-stories-and-project-planning">
+  
+  
+    <a href="#user-stories-and-project-planning" class="anchor-heading" aria-labelledby="user-stories-and-project-planning"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> User Stories and Project Planning
+  
+  
+</h1>
+    
+
+<p>In planning a project, need to assign priorities to each user story and Condition of Satisfaction. Priorities tell us the order in which COS and their associated engineering tasks should be addressed, and how much effort should be devoted to each of them.
+There are many ways to describe priorities. For example, a user story might be described as Essential, Desirable, or Extension:</p>
+
+<ul>
+  <li><strong>Essential</strong> means the project is useless without it.</li>
+  <li><strong>Desirable</strong> means the project is less usable without it, but is still usable.</li>
+  <li><strong>Extension</strong> describes a User story or COS that is desirable, but may not be achievable within the scope of the project.</li>
+</ul>
+<h2 id="minimum-viable-product-mvp">
+  
+  
+    <a href="#minimum-viable-product-mvp" class="anchor-heading" aria-labelledby="minimum-viable-product-mvp"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Minimum Viable Product (MVP)
+  
+  
+</h2>
+    
+
+<p>An MVP is a product that consists of all essential user stories. Developers should prioritize those above others.</p>
+<h1 id="vsd-user-stories-and-test-driven-development">
+  
+  
+    <a href="#vsd-user-stories-and-test-driven-development" class="anchor-heading" aria-labelledby="vsd-user-stories-and-test-driven-development"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> VSD, User Stories and Test-Driven Development
+  
+  
+</h1>
+    
+
+<p>We model the development process as a cycle of refinements:</p>
+
+<ol>
+  <li>VSD analysis to gather requirements</li>
+  <li>User Stories to docoument gathered requirements</li>
+  <li>Conditions of Satisfaction to refine the user stories</li>
+  <li>Testable behaviors</li>
+  <li>Executable Tests</li>
+  <li>Engineering Tasks (Code)</li>
+</ol>
+
+<p>As we proceed down these refinements, we will likely go back and revisit design decisions that we made at earlier stages. This is the topic of Module 02.</p>
+<h1 id="examples">
+  
+  
+    <a href="#examples" class="anchor-heading" aria-labelledby="examples"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Examples
+  
+  
+</h1>
+    
+<h2 id="user-stories-without-vsd">
+  
+  
+    <a href="#user-stories-without-vsd" class="anchor-heading" aria-labelledby="user-stories-without-vsd"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> User Stories Without VSD
+  
+  
+</h2>
+    
+
+<p>The following user stories were defined without performing VSD analysis.</p>
+<h3 id="user-story-1">
+  
+  
+    <a href="#user-story-1" class="anchor-heading" aria-labelledby="user-story-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> User Story #1
+  
+  
+</h3>
+    
+
+<p>As a user of stack overflow, I want to be able to reply to questions with answers so that I can help others with my knowledge. (Essential)</p>
+<h3 id="user-story-2">
+  
+  
+    <a href="#user-story-2" class="anchor-heading" aria-labelledby="user-story-2"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> User Story #2
+  
+  
+</h3>
+    
+
+<p>As a user of stack overflow, I want to list my replies and how often they are upvoted so that I can see how well people react to my answers.  (Desirable)</p>
+<h3 id="user-story-3">
+  
+  
+    <a href="#user-story-3" class="anchor-heading" aria-labelledby="user-story-3"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> User Story #3
+  
+  
+</h3>
+    
+
+<p>As a user of stack overflow, I want to be able to play the codel (like the wordle but for code) so that I can enjoy my time on the site. (Extension)</p>
+<h2 id="informed-consent-user-stories-using-vsd">
+  
+  
+    <a href="#informed-consent-user-stories-using-vsd" class="anchor-heading" aria-labelledby="informed-consent-user-stories-using-vsd"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Informed Consent User Stories (Using VSD)
+  
+  
+</h2>
+    
+
+<p>Based on the VSD analysis for informed consent we had resolved several value tensions and had identified the relevant stakeholders and values. We will use the observations from the analysis to document the following user stories:</p>
+<h3 id="user-story-1-1">
+  
+  
+    <a href="#user-story-1-1" class="anchor-heading" aria-labelledby="user-story-1-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> User Story #1
+  
+  
+</h3>
+    
+
+<p>As a Stack Overflow user, I want to clearly understand what personal data Stack Overflow collects through cookies and control which cookies are set so that I can make an informed choice about my privacy while still accessing the programming help I need. (Essential)</p>
+<h3 id="user-story-2-1">
+  
+  
+    <a href="#user-story-2-1" class="anchor-heading" aria-labelledby="user-story-2-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> User Story #2
+  
+  
+</h3>
+    
+
+<p>As a Stack Overflow site owner, I want to implement transparent cookie consent processes that comply with regulations while maintaining user engagement so that I can build user trust, avoid legal penalties, and sustain my business model without losing essential functionality. (Essential)</p>
+<h3 id="user-story-3-1">
+  
+  
+    <a href="#user-story-3-1" class="anchor-heading" aria-labelledby="user-story-3-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> User Story #3
+  
+  
+</h3>
+    
+
+<p>As an advertiser partnering with Stack Overflow, I want to access consented user data through cookies for targeted advertising so that I can deliver relevant ads to developers while respecting users’ informed consent choices and maintaining advertising effectiveness. (Essential)</p>
+<h3 id="user-story-4">
+  
+  
+    <a href="#user-story-4" class="anchor-heading" aria-labelledby="user-story-4"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> User Story #4
+  
+  
+</h3>
+    
+
+<p>As a regulator, I want to verify that Stack Overflow’s cookie implementation provides genuine informed consent so that I can ensure user rights are protected and the platform complies with data protection laws. (Essential)</p>
+<h2 id="conditions-of-satisfaction">
+  
+  
+    <a href="#conditions-of-satisfaction" class="anchor-heading" aria-labelledby="conditions-of-satisfaction"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Conditions of Satisfaction
+  
+  
+</h2>
+    
+<h3 id="for-user-story-1">
+  
+  
+    <a href="#for-user-story-1" class="anchor-heading" aria-labelledby="for-user-story-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> For User Story #1
+  
+  
+</h3>
+    
+
+<ul>
+  <li>There should be a place on questions to post my reply with an answer (Essential)</li>
+  <li>Replies should be visible to anyone who views the question (Essential)</li>
+  <li>I should be able to format my reply with syntax highlighting. (Desirable)</li>
+  <li>Replies should pop up in real-time without needing to reload the page (Extension)</li>
+</ul>
+<h3 id="for-user-story-2">
+  
+  
+    <a href="#for-user-story-2" class="anchor-heading" aria-labelledby="for-user-story-2"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> For User Story #2
+  
+  
+</h3>
+    
+
+<ul>
+  <li>I should be able to view a list of my replies and how many upvotes they have each received. (Essential)</li>
+  <li>I should be able to click on a reply from the list and it links me to the appropriate page. (Desirable)</li>
+  <li>Other users should be able to see my replies and total number of upvotes (Desirable)</li>
+  <li>I should be able to compare my total number of upvotes with all the other users on the site. (Extension)</li>
+</ul>
+<h3 id="for-user-story-3">
+  
+  
+    <a href="#for-user-story-3" class="anchor-heading" aria-labelledby="for-user-story-3"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> For User Story #3
+  
+  
+</h3>
+    
+
+<ul>
+  <li>I should be able to play the codel and use my knowledge of programming languages and practices to solve puzzles. (Essential)</li>
+  <li>Everyday the puzzle should change to something new. (Essential)</li>
+  <li>I should be able to share how well I did on the codel without spoiling the answer. (Desirable)</li>
+  <li>Puzzles should generate randomly so there is always a new puzzle. (Extension)</li>
+</ul>
+<h3 id="for-informed-consent-user-story-1">
+  
+  
+    <a href="#for-informed-consent-user-story-1" class="anchor-heading" aria-labelledby="for-informed-consent-user-story-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> For Informed Consent User Story #1
+  
+  
+</h3>
+    
+
+<ul>
+  <li>The system should display a clear cookie banner explaining what personal data is collected before any cookies are set (Essential)</li>
+  <li>Users should be able to access granular cookie controls to accept/reject specific categories (functional, analytics, advertising, personalization) (Desirable)</li>
+  <li>The system should provide a “privacy dashboard” showing what data has been collected about the user over time (Extension)</li>
+</ul>
+<h3 id="for-informed-consent-user-story-2">
+  
+  
+    <a href="#for-informed-consent-user-story-2" class="anchor-heading" aria-labelledby="for-informed-consent-user-story-2"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> For Informed Consent User Story #2
+  
+  
+</h3>
+    
+
+<ul>
+  <li>Cookie data containing personal information should be encrypted both in transit and at rest to prevent unauthorized access. (Essential)</li>
+  <li>The system should automatically expire cookies based on predefined retention periods. (Essential)</li>
+  <li>The system should allow users to read and search posts even if they reject data collection on cookies. (Desirable)</li>
+  <li>The platform should implement automated data retention policies that permanently delete expired cookie data. (Extension)</li>
+</ul>
+<h3 id="for-informed-consent-user-story-3">
+  
+  
+    <a href="#for-informed-consent-user-story-3" class="anchor-heading" aria-labelledby="for-informed-consent-user-story-3"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> For Informed Consent User Story #3
+  
+  
+</h3>
+    
+<ul>
+  <li>The system should only share personal data with advertisers when users have explicitly consented to advertising cookies. (Essential)</li>
+  <li>The system should make data sharing policies explicitly available to advertising partners. (Desirable)</li>
+  <li>The platform should provide advertisers with aggregated insights about consent patterns while preserving individual user privacy. (Extension)</li>
+</ul>
+<h3 id="for-informed-consent-user-story-4">
+  
+  
+    <a href="#for-informed-consent-user-story-4" class="anchor-heading" aria-labelledby="for-informed-consent-user-story-4"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> For Informed Consent User Story #4
+  
+  
+</h3>
+    
+<ul>
+  <li>The system should maintain audit logs of user consent choices and consent withdrawal actions. (Essential)</li>
+  <li>The system should provide summary reports demonstrating adherence to informed consent principles upon request. (Desirable)</li>
+  <li>The system should provide automated tools which regulators can use to verify if the personal data collection methods comply with local data protection laws. (Extension)</li>
+</ul>
+
+<p>Note how the user stories that resulted from VSD analysis on informed consent are markedly different from the user stories without VSD analysis – (1) they include more stakeholders as we explicitly reasoned about them, and (2) they explicitly encompass the values we considered were important to include in our requirements. This illustrates how combining VSD analysis with user stories not only helps us think about requirements more wholistically but also document them and track them systematically.</p>
+
+<p><a href="https://www.simplilearn.com/tutorials/agile-scrum-tutorial/user-stories#how_to_write_user_stories">User Stories</a>
+<a href="https://vsd.ccs.neu.edu/introduction/what-is-vsd/">VSD</a></p>
+
+          
+
+          
+        </main>
+        
+
+  <hr>
+  <footer>
+    
+
+    <p class="text-small text-grey-dk-100 mb-0">&copy; 2025-26 Adeel Bhutta, Joydeep Mitra and Mitch Wand. Released under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a> license</p>
+
+    
+  </footer>
+
+
+      </div>
+    </div>
+    
+      
+
+<div class="search-overlay"></div>
+
+    
+  </div>
+
+  
+</body>
+</html>
+
